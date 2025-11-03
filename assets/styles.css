@@ -1,0 +1,26 @@
+/* Styles de base personnalisés */
+body {
+  padding-top: 70px; /* espace pour la navbar fixe */
+}
+.header-hero {
+  background: #dfe8ff; /* couleur claire inspirée de la slide 1 */
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.header-hero h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.header-hero p.lead {
+  font-style: italic;
+  color: #333;
+}
+.section-card img {
+  max-width: 100%;
+  height: auto;
+}
+.footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #666;
+}
