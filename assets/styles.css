@@ -15,10 +15,66 @@ body {
   font-style: italic;
   color: #333;
 }
-.section-card img {
-  max-width: 100%;
-  height: auto;
+
+/* Styles pour les images */
+.section-card img,
+.img-uniform,
+.card-img-top,
+img {
+  border-radius: 12px; /* bordures arrondies */
+  border: 8px solid #dfe8ff; /* cadre blanc autour des images */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* ombre portée douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animation fluide */
 }
+
+.section-card img:hover,
+.img-uniform:hover,
+.card-img-top:hover,
+img:hover {
+  transform: translateY(-4px); /* légère élévation au survol */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* ombre plus prononcée */
+}
+
+.img-uniform,
+.card-img-top {
+  width: 100%;
+  height: 260px; /* hauteur uniforme par défaut */
+  object-fit: cover; /* recadrage propre */
+  display: block;
+}
+
+/* tailles adaptées pour petits écrans */
+@media (max-width: 576px) {
+  .img-uniform,
+  .card-img-top {
+    height: 160px;
+  }
+  .img-sample {
+    height: 200px;
+  }
+}
+
+/* Largeur uniforme pour les images d'échantillons */
+.img-sample {
+  width: 100%;
+  height: 600px; /* hauteur fixe pour toutes les images */
+  object-fit: cover; /* recadrage propre sans déformation */
+  display: block;
+}
+
+/* Dimensions uniformes pour les images de résultats */
+.img-results {
+  width: 450px;
+  height: 300px; /* hauteur fixe pour les graphiques */
+  object-fit: contain; /* contient l'image entière sans déformation */
+}
+
+@media (max-width: 576px) {
+  .img-results {
+    height: 250px; /* hauteur réduite sur mobile */
+  }
+}
+
 .footer {
   padding: 2rem 1rem;
   text-align: center;
