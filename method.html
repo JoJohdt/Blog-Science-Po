@@ -16,30 +16,73 @@
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="samples.html">II. Échantillons</a></li>
-          <li class="nav-item"><a class="nav-link" href="results.html">III. Résultats</a></li>
+          <li class="nav-item"><a class="nav-link" href="Litterature.html">I. Littérature</a></li>
+          <li class="nav-item"><a class="nav-link" href="samples.html">III. Échantillons</a></li>
+          <li class="nav-item"><a class="nav-link" href="results.html">IV. Résultats</a></li>
+          <li class="nav-item"><a class="nav-link" href="bibliography.html">Bibliographie</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main class="container my-5">
-    <h1>I. Notre méthode</h1>
+    <h1>II. Notre méthode</h1>
 
     <section class="mt-4">
-      <h2>Approche</h2>
-      <ul>
-        <li>Observation digitale (TikTok) — netnographie</li>
-        <li>Recherche de mots-clés et hashtags : « exercices salle de sport », « musculation femme », « gymgirl », etc.</li>
-        <li>Création d'un tableau Excel avec plusieurs variables (commentaires, mise en scène, exposition corporelle, zones ciblées, ton de la vidéo, etc.)</li>
-        <li>Analyse et croisement des données avec R</li>
+      <h2>1. Approche</h2>
+        <p style="text-indent: 2em;">Nous avons opté pour une <b>observation digitale</b> reposant sur une démarche <b>netnographique</b>, c’est-à-dire l’étude des comportements et des interactions dans un environnement numérique. TikTok constitue un terrain particulièrement intéressant pour ce type d’analyse pour plusieurs raisons :</p>
+        <ul> 
+          <li><b>Centralité de l’image et du corps :</b> TikTok est une plateforme visuelle où la mise en scène corporelle est au cœur des contenus, ce qui correspond parfaitement à notre problématique sur la représentation des sportifs et sportives.</li>
+          <li><b>Algorithme basé sur l’engagement :</b> Le système de recommandation favorise les vidéos qui suscitent des réactions (likes, commentaires), ce qui amplifie les normes sociales et les stéréotypes. Cela nous permet d’observer comment la sexualisation ou la performance influencent la visibilité.</li>
+          <li><b>Audience jeune et massive :</b> TikTok touche principalement des publics adolescents et jeunes adultes, qui sont des acteurs clés dans la construction des normes de genre et d’apparence.</li>
+          <li><b>Format court et viralité :</b> Les vidéos courtes incitent à des choix esthétiques marqués (angles, tenues, musique), ce qui rend les différences de traitement entre hommes et femmes plus visibles.</li>
+        </ul>
+        <p>fin de limiter les biais liés à l’algorithme et à la personnalisation des flux, nous avons <b>créé deux comptes distincts </b>:</p>
+        <ul> 
+          <li><b> Un compte orienté vers les contenus féminins </b>(hashtags comme #gymgirl, #musculationfemme).</li>
+          <li><b> Un compte orienté vers les contenus masculins </b>(hashtags comme #musculationhomme, #fitnessmen).</li>
+        </ul>
+        <p>Cette stratégie permet d’obtenir des recommandations différenciées et de comparer les univers visuels et discursifs propres à chaque genre.</p>
+    </section>
+
+    <section class="mt-4"> 
+      <h2>2. Collecte des données</h2>
+        <p style="text-indent: 2em;">Nous avons réalisé une <b>recherche ciblée par mots-clés et hashtags</b> afin d’identifier des contenus représentatifs :</p>
+        <ul> 
+          <li>Exemples : « exercices salle de sport », « musculation femme/homme », « gymgirl », « fitness », « workout ».</li>
+        </ul>
+        <p>Ces hashtags permettent de capter des vidéos où la dimension sportive est centrale, tout en laissant apparaître les variations dans la mise en scène selon le genre.</p>
+    </section>
+
+    <section class="mt-4"> 
+      <h2>3. Construction du jeu de données</h2>
+      <p style="text-indent: 2em;">Les vidéos sélectionnées ont été organisées dans un <b>tableau Excel</b> comportant plusieurs <b>variables d’observation</b> :</p>
+      <ul> 
+        <li><b>Caractéristiques visuelles :</b> présence de torse nu ou brassière, vêtements moulants, exposition corporelle.</li>
+        <li><b>Contexte :</b> espace privé/public, mise en scène du corps, zone focalisée (visage, abdominaux, fessiers).</li>
+        <li><b>Aspect technique :</b> angle de caméra, musique, ton de la vidéo (motivationnel, humoristique, esthétique).</li>
+        <li><b>Objectif déclaré :</b> performance, séduction, partage d’expérience.</li>
+        <li><b>Interactions :</b> nombre de commentaires, tonalité des réactions (positives, critiques, sexualisées).</li>
       </ul>
+      <p>Ces variables permettent de croiser <b>genre</b>, <b>mise en scène</b> et réception sociale.</p>
     </section>
 
     <section class="mt-4">
-      <h2>Données et variables</h2>
-      <p>Le jeu de données contient des lignes correspondant à des vidéos (identifiant, présence de torse nu ou brassière, vêtements moulants, espace privé/public, mise en scène du corps, zone focalisée, angle de caméra, musique, ton, objectif déclaré, etc.).</p>
-      <!--<p>Exemple : le tableau de collecte inclut de nombreuses vidéos annotées selon ces critères (voir fichier <code>assets/images/slide04.png</code> si tu veux déposer le screenshot).</p> -->
+      <h2>4. Analyse des données</h2>
+      <ul>
+        <li><b>Quantitatif :</b> croisement des variables avec <b>R</b> pour identifier des tendances (ex. : corrélation entre genre et sexualisation, engagement moyen selon type de contenu).</li>
+      </ul>
+      <a href="https://docs.google.com/spreadsheets/d/1o1ZsooRcMLUebYbOMwU3bp_Cc2Oqhbn75G8Mu80EhEU/edit?usp=sharing">Google Sheet</a>
+    </section>
+
+    <section class="mt-4">
+      <h2>5. Méthodes qui pouvaient être complémentaires</h2>
+      <p style="text-indent: 2em;">Pour enrichir l'observation, nous envisageons :</p>
+      <ul>
+        <li ><b>Questionnaire</b> sur le ressenti des pratiquant·e·s en salle de sport (perception des normes véhiculées par TikTok).</li>
+        <li><b>Entretiens qualitatifs</b> avec des influenceurs/influenceuses recruté·e·s via le questionnaire, afin de comprendre leurs choix de mise en scène.</li>
+        <li><b>Analyse discursive</b> des commentaires pour saisir la réception genrée des contenus.</li>
+      </ul>
     </section>
 
     <p class="mt-5"><a href="index.html" class="btn btn-secondary">Retour à l'accueil</a></p>
